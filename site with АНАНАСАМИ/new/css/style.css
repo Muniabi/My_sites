@@ -1,0 +1,411 @@
+/* Color Palette */
+/* Background styles */
+body {
+  background: radial-gradient(circle closest-side at 50px 50px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 40px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 60px 60px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 50px 70px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 165px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 140px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 160px 175px, #FB8B24 3px, transparent 0), radial-gradient(circle closest-side at 150px 185px, #FB8B24 3px, transparent 0), radial-gradient(ellipse closest-side at 50px 60px, #F9A734 18px, transparent 0), radial-gradient(ellipse closest-side at 150px 175px, #F9A734 18px, transparent 0), radial-gradient(circle closest-side at 30px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 40px 35px, #36964C 15px, transparent 0), radial-gradient(circle closest-side at 70px 40px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 60px 35px, #286E38 15px, transparent 0), radial-gradient(circle closest-side at 130px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle closest-side at 140px 150px, #36964C 15px, transparent 0), radial-gradient(circle at 170px 155px, #F9D8D4 15px, transparent 0), radial-gradient(circle at 160px 150px, #286E38 15px, transparent 0);
+  background-color: #F9D8D4;
+  background-size: 180px 210px;
+  background-attachment: fixed;
+  -webkit-animation: animatedBackground 0.5s cubic-bezier(0.61, -0.64, 0.58, 1.46) forwards;
+          animation: animatedBackground 0.5s cubic-bezier(0.61, -0.64, 0.58, 1.46) forwards;
+}
+
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.6;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+/*Container*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container2{
+	width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 20px;
+  color: #000;
+}
+
+
+
+/*Intro*/
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	widows: 100%;
+	height: 100vh;
+}
+
+.intro_inner {
+	  widows: 100%;
+	  max-width: 880px;
+	  margin: 0 auto;
+}
+
+.intro_title {
+	font-size: 150px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	list-height: 1;
+
+}
+
+.intro_subtitle {
+	font-size: 72px;
+	font-family: 'Kaushan Script', cursive;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+
+/*Header*/
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	padding-top: 30px;
+}
+
+.header_inner {
+	display: flex;
+	justify-self: space-between;
+	align-items: center;
+}
+
+.header_logo {
+	font-size: 30px;
+	font-weight: 700;
+	color: #000;
+}
+
+
+/*Nav*/
+.nav__link {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0px;
+}
+
+nav {
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  width: 590px;
+  height: 50px;
+  background-color: #286e38;
+  border-radius: 10px;
+  font-size: 0;
+  right: -180px
+}
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f9d8d4;
+  cursor: pointer;
+}
+nav .animation {
+	  display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 10px;
+}
+a:nth-child(1) {
+  width: 100px;
+}
+a:nth-child(2) {
+  width: 110px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0;
+  background-color: #000000;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+  width: 110px;
+  left: 100px;
+  background-color: #000000;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+  width: 100px;
+  left: 210px;
+  background-color: #000000;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+  width: 160px;
+  left: 310px;
+  background-color: #000000;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+  width: 120px;
+  left: 470px;
+  background-color: #000000;
+}
+
+
+/*Section*/
+
+.section {
+	padding: 80px 0;
+	background-color: #fff;
+	height: 100vh;
+
+}
+
+.section__header{
+	margin-bottom: 0 auto 40px;
+	width: 100%;
+	max-width: 1200px;
+	text-align: center;
+
+}
+
+.section__subtitle {
+	font-style: 24px;
+	color: #333;
+	font-family: 'Kaushan Script', cursive;
+
+}
+
+.section__title {
+	font-style: 30px;
+	color: #333;
+	font-weight: 700; 
+	text-transform: uppercase;
+}
+
+.section__title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 30px auto;
+
+	background-color: #f9a734;
+}
+
+
+.section__text {
+	font-size: 15px;
+	color: #999;
+
+}
+
+/*About*/
+
+.about {
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.about__item {
+	width: 380px;
+	height: 380px;
+	border-radius: 80px;
+	background-color: #36964c;
+
+}
+
+.about__item:hover .about__img {
+	transform: translate3d(-10px, -10px, 0px);
+}
+
+about__item:hover .about__text {
+	opacity: .1;
+}
+
+.about__item:hover .about__img img {
+	opacity: .1;
+}
+
+
+ .about__img{
+	background: linear-gradient(to bottom,#f38181,#fce38a);
+	border-radius: 80px;
+	transition: transform .2s linear;
+}
+
+
+.about__img img {
+	display: block;
+	text-replace: opacity .1s linear;
+}
+
+
+.about__text {
+	width: 100%;
+
+	font-size: 18px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	opacity: 0;
+
+	transform: translate3d(0, -50%, 0);
+
+	transition: opacity .2s linear ;
+}
+
+
+/*Statistics*/
+
+.statistics {
+	width: 100%;
+}
+
+.stat {
+	padding: 40px 0;
+	display: flex;
+}
+
+.stat__item {
+	margin: 0 15px;
+
+	flex: 1 1 0;
+	padding: 70px 25px;
+	border-radius: 30px;
+	border: 10px solid #000;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+}
+
+.stat__item: {
+	border-right: 5px solid #000;
+}
+
+
+/*VIDEO*/
+
+
+.section__video{
+	padding: 80px 0;
+	background-color: #ffa05f;
+	height: 100vh;
+	border: 0;
+}
+
+
+.section__header__video{
+	width: 100%;
+	max-width: 1200px;
+	text-align: center;
+	height: 100vh;
+	justify-content: center;
+}
+
+video {
+
+}
+
+.video__play {
+	width: 900px;
+	border: 0;
+}
+
+/*TABLE*/
+
+
+table {
+	width: 100%;
+	
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-weight: 400;
+	font-size: 20px;
+
+
+	border-collapse: separate;
+	border-spacing: 5px;
+	border: 16px solid #f9a734;
+	border-radius: 20px;
+
+}
+
+th {
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+td {
+	background-color: #fff;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ФУТОР*/
+
+
+.footer{
+	padding-top: 65px;
+	background-color: body;
+}
